@@ -19,4 +19,3 @@ class Triangle
     false
   end
 end
-
