@@ -9,12 +9,12 @@ class Triangle
 
   def kind
   if sideA != sideB && sideA != sideC || sideC != sideA
-    return :scalene
+  :scalene
   elsif sideA == sideB || sideA == sideC
-    return :isosceles
+   :isosceles
 
   elsif sideA == sideB == sideC
-    return :equilateral
+   :equilateral
   else
     return
     false
