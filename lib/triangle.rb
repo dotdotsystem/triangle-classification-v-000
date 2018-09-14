@@ -7,24 +7,21 @@ class Triangle
   end
 
   def kind
-  if @one != @two && @two != @three || @three != @one 
+  if @one != @two && @two != @three || @three != @one
     return :scalene
-  elsif @one == @two || @one == @three 
+  elsif @one == @two || @one == @three
     return :isosceles
 
   elsif @one == @two == @three
     return :equilateral
-  else 
-    return 
+  else
+    return
     false
-  end 
-end 
-
-    
-    
-    
-  end 
+  end
+end
 
 
-  
+
+
+
 end
