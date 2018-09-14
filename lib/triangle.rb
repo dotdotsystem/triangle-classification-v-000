@@ -1,18 +1,19 @@
 class Triangle
+    attr_accessor :sideA, :sideB, :sideC
 
-  def initialize (one:, two:, three:)
-    @one = one
-    @two = twp
-    @three = three
-  end
+    def initialize(a, b, c)
+      @sideA = a
+      @sideB = b
+      @sideC = c
+    end
 
   def kind
-  if @one != @two && @two != @three || @three != @one
+  if sideA != sideB && sideA != sideC || sideC != sideA
     return :scalene
-  elsif @one == @two || @one == @three
+  elsif sideA == sideB || sideA == sideC
     return :isosceles
 
-  elsif @one == @two == @three
+  elsif sideA == sideB == sideC
     return :equilateral
   else
     return
