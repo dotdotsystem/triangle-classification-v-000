@@ -1,19 +1,19 @@
 class Triangle
-  attr_accessor :ab, :bc, :ac
+  attr_accessor :a, :b, :c
 
-  def initialize(ab, bc, ac)
-    @ab = ab
-    @bc = bc
-    @ac = ac
+  def initialize(a, b, c)
+    @ab = a
+    @bc = b
+    @ac = c
   end
 
 
   def kind
-    if ab <= 0 || bc <= 0 || ac <= 0 || (ab + bc <= ac) || (ab + ac <= bc) || (ac + bc <= ab)
+    if a <= 0 || b <= 0 || c <= 0 || (a + b <= c) || (a + c <= b) || (c + b <= a)
       raise TriangleError
-      elsif ab == bc && bc == ac
+      elsif a == b && b == c
         :equilateral
-      elsif ab == bc || bc == ac || ac == ab
+      elsif a == b || b == a || c == a
         :isosceles
       else
         :scalene
