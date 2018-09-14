@@ -9,7 +9,7 @@ class Triangle
 
 
   def kind
-    if ab <= 0 || bc <= 0 || ac <= 0 || (ab + bc <= ac) || (ab + ac <= bc) || (ac + bc <= ab) 
+    if ab <= 0 || bc <= 0 || ac <= 0 || (ab + bc <= ac) || (ab + ac <= bc) || (ac + bc <= ab)
       raise TriangleError
       elsif ab == bc && bc == ac
         :equilateral
